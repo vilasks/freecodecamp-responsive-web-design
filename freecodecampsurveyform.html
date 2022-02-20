@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        .main{
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        }
+        .checkbox{
+            font-family: sans-serif;
+            font-weight: bold;
+            
+            
+        }
+        label,input,select{
+            margin-bottom: 10px;
+        }
+        #yesorno{
+            display: block;
+        }
+        #checkboxlabel{
+            display: block;
+        }
+        label{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #name,#email,#number{
+            text-align: center;
+            display: block;
+            height: 50px;
+            width: 500px;
+            border-radius: 5px;
+            font-family: serif;
+        }
+        @media (max-width:600px){
+            input{
+                display: block;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">Machine Learning Course Review Form</h1>
+        <p id="description">Reviewing Ml course</p>
+        <div class="form-div">
+            <form action="#" id="survey-form">
+                <div class="name">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" id="name" required />
+                </div>
+                <div class="email">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" pattern=".+@gmail.com" required />
+                </div>
+                <div class="year">
+                    <label id="number-label" for="year">Academic Year</label>
+                    <input type="number" placeholder="Enter your current academic year" id="number" min="2020" max="2023" />
+                </div>
+                <div class="rating">
+                    <label for="rating">Select Your Rating</label>
+                    <select name="rating" id="dropdown">
+                        <option value="one-start">1</option>
+                        <option value="one-start">2</option>
+                        <option value="one-start">3</option>
+                        <option value="one-start">4</option>
+                        <option value="one-start">5</option>
+                    </select>
+                </div>
+                <div class="recommend">
+                    <label for="question" id="yesorno">Would you recommed this course to your friends or colleagues</label>
+                    <input type="radio" name="radioopt" value="yes">Yes</input>
+                    <input type="radio" name="radioopt" value="no">No</input>
+                </div>
+                <div class="checkbox">
+                    <label for="rec" id="checkboxlabel">Which chapter would you like to Review</label>
+                    <input type="checkbox" value="Chapter-1">Chapter 1</input>
+                    <input type="checkbox" value="Chapter-2">Chapter 2</input>
+                    <input type="checkbox" value="Chapter-3">Chapter 3</input>
+                    <input type="checkbox" value="Chapter-4">Chapter 4</input>
+                </div>
+                <div class="text-area">
+                    <label for="Remarks">Remarks</label>
+                    <textarea name="remarks" id="addtional-comments" cols="30" rows="10" placeholder="Provide your remarks"></textarea>
+                </div>
+                <div class="btn">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

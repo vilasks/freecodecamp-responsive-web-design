@@ -1,0 +1,249 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#3E71DC;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        header{
+            position: fixed;
+            width: 100%;
+        }
+
+        #header-img{
+            height: 50px;
+            width: 50px;
+        }
+        .nav-container{
+            display: flex;
+            justify-content:space-between;
+            background-color: rgb(10, 6, 248);
+        }
+        .nav-link{
+            padding: 20px;
+            color: white;
+            font-family: Verdana, Tahoma, sans-serif;
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+            line-height: 50px;
+            border-radius: 10px;
+            box-shadow: rgb(24, 83, 212);
+        }
+        
+        iframe{
+            margin-top: 50px;
+            width: 500px;
+            height: 300px;
+        }
+        .video-container{
+            padding-top: 20px;
+            margin-left:35%;
+        }
+        input{
+            display: block;
+        }
+        #email{
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            border-style: solid;
+            text-align: center;
+        }
+        #submit{
+            padding: 15px;
+            border-style: solid;
+            border-radius: 5px;
+            background-color: rgba(39, 36, 163, 0.685);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        #email-label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+        #summary{
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            background-color: rgb(29, 67, 150);
+        }
+        .text-desc{
+            font-family:'Arial Narrow Bold', sans-serif;
+            color: rgb(255, 255, 255);
+            width: 500px;
+            text-align: center;
+            
+        }
+        .summary-image{
+            width: 250px;
+            height: 180px;
+        }
+
+        #pricing-card{
+            width: 300px;
+        }
+        .card-header{
+            font-family: sans-serif;
+            color: white;
+            padding: 20px;
+            background-color: rgb(107, 107, 107);
+            text-align: center;
+        }
+        .card-body{
+            font-family: sans-serif;
+            color:black;
+            padding: 20px;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+        #details{
+            font-size: 10px;
+        }
+        #pricing{
+            display: flex;
+            justify-content:center;
+            gap: 10px;
+        }
+        #about{
+            
+            font-family: monospace;
+            background-color: whitesmoke;
+            margin-bottom: 0;
+        }
+        @media (max-width:800px){
+            iframe{
+                width: 300px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="nav-container">
+            <div>
+                <img src="https://st2.depositphotos.com/1768926/7866/v/600/depositphotos_78666192-stock-illustration-a-logo-sample-logo-for.jpg"
+                    alt="Company Logo" id="header-img">
+            </div>
+            <div>
+                <nav id="nav-bar">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#summary" class="nav-link">How It Works</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/zzSR1bYKIvg" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="form-container">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <p id="email-label">Enter Your Email to get Quote</p>
+            <input type="email" name="email" id="email" pattern=".+@gmail.com" required placeholder="Enter Your Email">
+            <button id="submit" type="submit">Get Quote</button>
+        </form>
+    </div>
+    <div id="summary">
+        <div class="sum-image">
+            <img src="https://i.gadgets360cdn.com/products/large/acer-predator-helios-300-db-1080x800-1618831660.jpg?downsize=*:180" alt="Image" class="summary-image">
+        </div>
+        <div class="text-desc">
+            Acer Predator Helios 300 (2021) is a Windows 10 Home laptop with a 15.60-inch display that has a resolution of 1920x1080
+            pixels. it comes with 16GB of RAM. The Acer Predator Helios 300 (2021) packs 1TB of HDD storage and 256GB of SSD
+            storage.
+        </div>
+    </div>
+    <div id="summary">
+        <div class="sum-image">
+            <img src="https://static-ecapac.acer.com/media/catalog/product/cache/a17a77e026ef2eddd3ecae104c32cc71/p/h/ph517-52-1.jpg"
+                alt="Image" class="summary-image">
+        </div>
+        <div class="text-desc">
+            Extreme Performance : Crush the competition with the impressive power and speed of the 11th Generation Intel Core
+            i9-11980HK processor which is overclockable, featuring 8 cores and 16 threads to divide and conquer any task or run your
+            most intensive games
+        </div>
+    </div>
+    <div id="summary">
+        <div class="sum-image">
+            <img src="https://static-ecapac.acer.com/media/catalog/product/cache/a17a77e026ef2eddd3ecae104c32cc71/h/3/h3.jpg"
+                alt="Image" class="summary-image">
+        </div>
+        <div class="text-desc">
+            Blazing-Fast Display: 43.9cm(17.3") display with IPS (In-Plane Switching) technology, Ultra HD 3840 x 2160,
+            high-brightness (SDR mode 480 nits / HDR mode 1000 nits), high color gamut (DCI-P3 100%), Acer ComfyView LED-backlit TFT
+            LCD, intergrated Mini LED
+            technology. Supporting frame rate 120Hz and HDR 1000 for the gamers who demand the best visual experiences
+        </div>
+    </div>
+    <div id="pricing">
+        <div id="pricing-card">
+            <div class="card-header">
+                INTEL I3 RTX 3060
+            </div>
+            <div class="card-body">
+                <b>RS/- 76000</b>
+                <br>
+                <hr>
+                <span id="details">
+                    Predator Helios 500 Gaming Laptop (11th Gen Intel Core i3/17.3" 4K UHD Display/8GB DDR4 RAM/2TB SSD/1TB
+                    HDD/RTX 3060
+                    Graphics/Per Key RGB Backlit Keyboard) | PH517-52
+                </span>
+            </div>
+        </div>
+        <div id="pricing-card">
+            <div class="card-header">
+                INTEL I7 RTX 3060
+            </div>
+            <div class="card-body">
+                <b>RS/- 89000</b>
+                <br>
+                <hr>
+                <span id="details">
+                    Predator Helios 500 Gaming Laptop (11th Gen Intel Core i7/17.3" 4K UHD Display/16GB DDR4 RAM/2TB SSD/1TB
+                    HDD/RTX 3060
+                    Graphics/Per Key RGB Backlit Keyboard) | PH517-52
+                </span>
+            </div>
+        </div>
+        <div id="pricing-card">
+            <div class="card-header">
+                INTEL I9 RTX 3060
+            </div>
+            <div class="card-body">
+                <b>RS/- 109000</b>
+                <br>
+                <hr>
+                <span id="details">
+                    Predator Helios 500 Gaming Laptop (11th Gen Intel Core i9/17.3" 4K UHD Display/64GB DDR4 RAM/2TB SSD/1TB
+                    HDD/RTX 3080
+                    Graphics/Per Key RGB Backlit Keyboard) | PH517-52
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium suscipit ea totam! Dolore accusantium repellat ipsam eveniet magnam! Minima modi hic quae magni dolorum. Nemo saepe iure natus minus.
+        Est officiis quo, deleniti sint, numquam cum eaque beatae delectus cumque temporibus ad quas qui ratione neque reprehenderit nobis quod quis, ea optio maiores at? Ipsam accusamus dolorem possimus ad?</p>
+    </div>
+</body>
+
+</html>
